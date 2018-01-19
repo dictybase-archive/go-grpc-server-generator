@@ -89,9 +89,9 @@ func generateCode(c *cli.Context) error {
 	aphgrpcPath := "github.com/dictyBase/apihelpers/aphgrpc"
 
 	f.Const().Defs(
-		Id(shortSrv + "DbTable").Op("=").Lit("--TABLE NAME--"),
+		Id(srv + "DbTable").Op("=").Lit("--TABLE NAME--"),
 	)
-	f.Var().Id(shortSrv + "Cols").Op("=").Index().String().Values(Lit("List of column names ..."))
+	f.Var().Id(srv + "Cols").Op("=").Index().String().Values(Lit("List of column names ..."))
 	f.Type().Id(dstruct).Struct()
 	f.Type().Id(usrv + "Service").Struct(
 		Op("*").Qual(aphgrpcPath, "Service"),
