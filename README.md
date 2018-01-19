@@ -1,7 +1,8 @@
 # go-grpc-server-generator
 A cli to generate golang code for implementing gRPC server 
 
-# Usage
+# Command line
+```
 NAME:   
    go-grpc-server-generator - Generates code for implementing grpc server
 
@@ -21,3 +22,4 @@ GLOBAL OPTIONS:
    --output value, -o value           output file name, by default printed to stdout
    --help, -h                         show help
    --version, -v                      print the version
+```
